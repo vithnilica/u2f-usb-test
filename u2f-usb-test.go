@@ -51,6 +51,7 @@ func main() {
 	}
 
 	if len(devs4test) > 0 {
+		time.Sleep(time.Second)
 		fmt.Println("")
 		fmt.Println("spousti se testy registrace a autentizace")
 		app := sha256.Sum256([]byte("u2f diag"))
